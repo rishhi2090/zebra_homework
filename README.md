@@ -22,7 +22,7 @@ place your trigger bucket name into TRIGGER_BUCKET_NAME, then run the command:
 gcloud functions deploy validator --runtime python37 --trigger-resource TRIGGER_BUCKET_NAME --trigger-event google.storage.object.finalize
 
 # Testing the function
-for testing the function i used the following Triggering event
+for testing the function i used the following Triggering event although the values should be diffrent based on the bucket names and the json passed to the trigger bucket name
 
 {
    "bucket":"validator-zebra-bucket",
