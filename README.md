@@ -12,7 +12,6 @@ cd zebra_homework
 
 Open the code and change lines 5 and 6 to the bucket names you have created for valid and invalid;
 
-#bucket names, change to your bucket names
 valid_bucket_name = 'valid-bucket'
 invalid_bucket_name = 'invalid-bucket'
 
