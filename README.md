@@ -10,6 +10,12 @@ git clone https://github.com/rishhi2090/zebra_homework.git
 Change directory to the code:
 cd zebra_homework
 
-place your bucket name into TRIGGER_BUCKET_NAME, then run the command:
+Open the code and change lines 5 and 6 to the bucket names you have created for valid and invalid;
+
+#bucket names, change to your bucket names
+valid_bucket_name = 'valid-bucket'
+invalid_bucket_name = 'invalid-bucket'
+
+place your trigger bucket name into TRIGGER_BUCKET_NAME, then run the command:
 
 gcloud functions deploy validator --runtime python37 --trigger-resource TRIGGER_BUCKET_NAME --trigger-event google.storage.object.finalize
