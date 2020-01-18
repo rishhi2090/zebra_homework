@@ -21,7 +21,7 @@ place your trigger bucket name into TRIGGER_BUCKET_NAME, then run the command:
 
 gcloud functions deploy validator --runtime python37 --trigger-resource TRIGGER_BUCKET_NAME --trigger-event google.storage.object.finalize
 
-#Testing the function
+# Testing the function
 for testing the function i used the following Triggering event
 
 {
