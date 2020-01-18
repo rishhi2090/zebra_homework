@@ -4,6 +4,12 @@ A Cloud Function to process a file uploaded to a bucket. The file will contain a
 # Deployment Instructions
 Create three buckets, one to upload the file to, one to upload the valid JSON to and one to upload the invalid JSON to.
 
+Clone project using:
+git clone https://github.com/rishhi2090/zebra_homework.git
 
-place your bucket name into TRIGGER_BUCKET_NAME
+Change directory to the code:
+cd zebra_homework
+
+place your bucket name into TRIGGER_BUCKET_NAME, then run the command:
+
 gcloud functions deploy validator --runtime python37 --trigger-resource TRIGGER_BUCKET_NAME --trigger-event google.storage.object.finalize
