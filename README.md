@@ -12,7 +12,9 @@ cd zebra_homework
 
 Open the code and change lines 5 and 6 to the bucket names you have created for valid and invalid;
 
+
 valid_bucket_name = 'valid-bucket'
+
 invalid_bucket_name = 'invalid-bucket'
 
 place your trigger bucket name into TRIGGER_BUCKET_NAME, then run the command:
