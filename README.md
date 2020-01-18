@@ -2,7 +2,7 @@
 A Cloud Function to process a file uploaded to a bucket. The file will contain a list of products by departments and the function should process the file and save it to two different buckets: one for valid and one for invalid products. Your output files should keep the original structure of the input file.
 
 # Deployment Instructions
-Create three buckets, one to upload the file to, one to upload the valid JSON to and one to upload the invalid JSON to.
+Create three buckets, one to upload the JSON to parse, one to upload the output of the valid JSON to and one to upload the output of the invalid JSON to.
 
 Clone project using:
 git clone https://github.com/rishhi2090/zebra_homework.git
