@@ -49,7 +49,7 @@ def validator(data, context):
         invalid_products = []
         for product in products:
             if('description' in product and 'price' in product and 'upc' in product):
-                if(len(product['upc'])==12 and isinstance(product['price'], float)):
+                if(len(product['upc'])==12 and product['upc'].isnumeric() and isinstance(product['price'], float)):
                     valid_products.append(product)
                 else:
                     invalid_products.append(product)
